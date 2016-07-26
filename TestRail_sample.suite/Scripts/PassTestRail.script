@@ -1,0 +1,14 @@
+﻿//call the python code
+//set this script at "Settings" -> "After each Run"
+set the shellCommand to "ShellExecute"
+put SuiteInfo().resultsFolder
+shell "C:/Workspaces/ePF/TestRailSample/TestRailUpload.bat", SuiteInfo().resultsFolder
+
+put file "C:\Workspaces\ePF\TestRailSample\TestRail_ep.txt"
+
+
+
+
+
+
+
